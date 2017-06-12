@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		076897561EDE91C400443543 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076897551EDE91C400443543 /* MainTableViewCell.xib */; };
+		076897581EDE956400443543 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076897571EDE956400443543 /* MainTableViewCell.swift */; };
+		0768975A1EDE96C400443543 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076897591EDE96C400443543 /* Order.swift */; };
+		0768975C1EDE9C3F00443543 /* LongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0768975B1EDE9C3F00443543 /* LongTableViewCell.xib */; };
+		0768975E1EDE9C5500443543 /* LongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0768975D1EDE9C5500443543 /* LongTableViewCell.swift */; };
+		31CA77B5F3892A13C6CD34EB /* Pods_TaxiCrameaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5653740F09564BDB612CC304 /* Pods_TaxiCrameaTests.framework */; };
+		8400CB5C1EDAC6F2003ED5DC /* Avto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400CB5B1EDAC6F2003ED5DC /* Avto.swift */; };
+		84265B7A1EE93F7B005FC13E /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84265B791EE93F7B005FC13E /* OptionsViewController.swift */; };
+		8440B4451EDABFEB000BB138 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440B4441EDABFEB000BB138 /* User.swift */; };
+		844475321ED96A470036AFC2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844475311ED96A470036AFC2 /* Const.swift */; };
+		847D54021E584573001A1C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D54011E584573001A1C4F /* AppDelegate.swift */; };
+		847D54041E584573001A1C4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D54031E584573001A1C4F /* ViewController.swift */; };
+		847D54071E584573001A1C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D54051E584573001A1C4F /* Main.storyboard */; };
+		847D54091E584573001A1C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847D54081E584573001A1C4F /* Assets.xcassets */; };
+		847D540C1E584573001A1C4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847D540A1E584573001A1C4F /* LaunchScreen.storyboard */; };
+		847D54171E584574001A1C4F /* TaxiCrameaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D54161E584574001A1C4F /* TaxiCrameaTests.swift */; };
+		847D54221E584574001A1C4F /* TaxiCrameaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D54211E584574001A1C4F /* TaxiCrameaUITests.swift */; };
+		84E666761EE70A0C00155FDA /* ViewForInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E666751EE70A0C00155FDA /* ViewForInfo.xib */; };
+		84EF709C1EE2EC6000232990 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF709B1EE2EC6000232990 /* RegViewController.swift */; };
+		84FDD4711EDAD154004E6BAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDD4701EDAD154004E6BAB /* MainViewController.swift */; };
+		84FDD4761EDAD339004E6BAB /* BuyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDD4751EDAD339004E6BAB /* BuyTableViewCell.swift */; };
+		84FDD4781EDAD364004E6BAB /* BuyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FDD4771EDAD364004E6BAB /* BuyTableViewCell.xib */; };
+		B1C40CA71EEE81A50045451D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C40CA61EEE81A50045451D /* GradientView.swift */; };
+		B1C40CA91EEE88330045451D /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C40CA81EEE88330045451D /* BuyViewController.swift */; };
+		BD882E073AF14A2B3942FA8A /* Pods_TaxiCrameaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490C5EDC2304FB28918FB18B /* Pods_TaxiCrameaUITests.framework */; };
+		F4F90B9E80BF0F8750CF66A0 /* Pods_TaxiCramea.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA8A67C4F72AE2719BF1F51 /* Pods_TaxiCramea.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847D54131E584573001A1C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847D53F61E584573001A1C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847D53FD1E584573001A1C4F;
+			remoteInfo = TaxiCramea;
+		};
+		847D541E1E584574001A1C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847D53F61E584573001A1C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847D53FD1E584573001A1C4F;
+			remoteInfo = TaxiCramea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		076897551EDE91C400443543 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		076897571EDE956400443543 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		076897591EDE96C400443543 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0768975B1EDE9C3F00443543 /* LongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LongTableViewCell.xib; sourceTree = "<group>"; };
+		0768975D1EDE9C5500443543 /* LongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongTableViewCell.swift; sourceTree = "<group>"; };
+		16C9DB284D6AD31606D7F86C /* Pods-TaxiCramea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCramea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea.debug.xcconfig"; sourceTree = "<group>"; };
+		389FCBC2B782EC5BF62463FD /* Pods-TaxiCrameaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCrameaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		490C5EDC2304FB28918FB18B /* Pods_TaxiCrameaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiCrameaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA8A67C4F72AE2719BF1F51 /* Pods_TaxiCramea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiCramea.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5653740F09564BDB612CC304 /* Pods_TaxiCrameaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxiCrameaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60CBBE9F2673391AB917BFBA /* Pods-TaxiCrameaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCrameaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8400CB5B1EDAC6F2003ED5DC /* Avto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avto.swift; sourceTree = "<group>"; };
+		84265B791EE93F7B005FC13E /* OptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		8440B4441EDABFEB000BB138 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		844475311ED96A470036AFC2 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		847D53FE1E584573001A1C4F /* TaxiCramea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiCramea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D54011E584573001A1C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847D54031E584573001A1C4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847D54061E584573001A1C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847D54081E584573001A1C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847D540B1E584573001A1C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847D540D1E584573001A1C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847D54121E584573001A1C4F /* TaxiCrameaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiCrameaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D54161E584574001A1C4F /* TaxiCrameaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiCrameaTests.swift; sourceTree = "<group>"; };
+		847D54181E584574001A1C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847D541D1E584574001A1C4F /* TaxiCrameaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaxiCrameaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		847D54211E584574001A1C4F /* TaxiCrameaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiCrameaUITests.swift; sourceTree = "<group>"; };
+		847D54231E584574001A1C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E666751EE70A0C00155FDA /* ViewForInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewForInfo.xib; sourceTree = "<group>"; };
+		84EF709B1EE2EC6000232990 /* RegViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		84FDD4701EDAD154004E6BAB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84FDD4751EDAD339004E6BAB /* BuyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewCell.swift; sourceTree = "<group>"; };
+		84FDD4771EDAD364004E6BAB /* BuyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyTableViewCell.xib; sourceTree = "<group>"; };
+		8C60429EF09BBCA5DC11FBA8 /* Pods-TaxiCrameaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCrameaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C0B44E3159687B9C8E9A7BB /* Pods-TaxiCramea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCramea.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea.release.xcconfig"; sourceTree = "<group>"; };
+		B1C40CA61EEE81A50045451D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B1C40CA81EEE88330045451D /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		E43C240B9E524BC44BA64BD2 /* Pods-TaxiCrameaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiCrameaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847D53FB1E584573001A1C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F90B9E80BF0F8750CF66A0 /* Pods_TaxiCramea.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D540F1E584573001A1C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31CA77B5F3892A13C6CD34EB /* Pods_TaxiCrameaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D541A1E584574001A1C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD882E073AF14A2B3942FA8A /* Pods_TaxiCrameaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8440B4431EDABFDA000BB138 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8440B4441EDABFEB000BB138 /* User.swift */,
+				8400CB5B1EDAC6F2003ED5DC /* Avto.swift */,
+				076897591EDE96C400443543 /* Order.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		847D53F51E584573001A1C4F = {
+			isa = PBXGroup;
+			children = (
+				847D54001E584573001A1C4F /* TaxiCramea */,
+				847D54151E584573001A1C4F /* TaxiCrameaTests */,
+				847D54201E584574001A1C4F /* TaxiCrameaUITests */,
+				847D53FF1E584573001A1C4F /* Products */,
+				DB5CEE87CE62D4EF03280984 /* Pods */,
+				9FEAE7D08A328B9093C47EBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		847D53FF1E584573001A1C4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847D53FE1E584573001A1C4F /* TaxiCramea.app */,
+				847D54121E584573001A1C4F /* TaxiCrameaTests.xctest */,
+				847D541D1E584574001A1C4F /* TaxiCrameaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847D54001E584573001A1C4F /* TaxiCramea */ = {
+			isa = PBXGroup;
+			children = (
+				84FDD4741EDAD2FD004E6BAB /* Cell */,
+				84FDD46F1EDACDE7004E6BAB /* Controller */,
+				8440B4431EDABFDA000BB138 /* Model */,
+				847D54011E584573001A1C4F /* AppDelegate.swift */,
+				847D54051E584573001A1C4F /* Main.storyboard */,
+				847D54081E584573001A1C4F /* Assets.xcassets */,
+				847D540A1E584573001A1C4F /* LaunchScreen.storyboard */,
+				847D540D1E584573001A1C4F /* Info.plist */,
+				844475311ED96A470036AFC2 /* Const.swift */,
+				B1C40CA61EEE81A50045451D /* GradientView.swift */,
+			);
+			path = TaxiCramea;
+			sourceTree = "<group>";
+		};
+		847D54151E584573001A1C4F /* TaxiCrameaTests */ = {
+			isa = PBXGroup;
+			children = (
+				847D54161E584574001A1C4F /* TaxiCrameaTests.swift */,
+				847D54181E584574001A1C4F /* Info.plist */,
+			);
+			path = TaxiCrameaTests;
+			sourceTree = "<group>";
+		};
+		847D54201E584574001A1C4F /* TaxiCrameaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				847D54211E584574001A1C4F /* TaxiCrameaUITests.swift */,
+				847D54231E584574001A1C4F /* Info.plist */,
+			);
+			path = TaxiCrameaUITests;
+			sourceTree = "<group>";
+		};
+		84FDD46F1EDACDE7004E6BAB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				847D54031E584573001A1C4F /* ViewController.swift */,
+				84FDD4701EDAD154004E6BAB /* MainViewController.swift */,
+				84EF709B1EE2EC6000232990 /* RegViewController.swift */,
+				84265B791EE93F7B005FC13E /* OptionsViewController.swift */,
+				B1C40CA81EEE88330045451D /* BuyViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84FDD4741EDAD2FD004E6BAB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84FDD4771EDAD364004E6BAB /* BuyTableViewCell.xib */,
+				84FDD4751EDAD339004E6BAB /* BuyTableViewCell.swift */,
+				076897551EDE91C400443543 /* MainTableViewCell.xib */,
+				076897571EDE956400443543 /* MainTableViewCell.swift */,
+				0768975B1EDE9C3F00443543 /* LongTableViewCell.xib */,
+				0768975D1EDE9C5500443543 /* LongTableViewCell.swift */,
+				84E666751EE70A0C00155FDA /* ViewForInfo.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		9FEAE7D08A328B9093C47EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DA8A67C4F72AE2719BF1F51 /* Pods_TaxiCramea.framework */,
+				5653740F09564BDB612CC304 /* Pods_TaxiCrameaTests.framework */,
+				490C5EDC2304FB28918FB18B /* Pods_TaxiCrameaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB5CEE87CE62D4EF03280984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16C9DB284D6AD31606D7F86C /* Pods-TaxiCramea.debug.xcconfig */,
+				9C0B44E3159687B9C8E9A7BB /* Pods-TaxiCramea.release.xcconfig */,
+				389FCBC2B782EC5BF62463FD /* Pods-TaxiCrameaTests.debug.xcconfig */,
+				8C60429EF09BBCA5DC11FBA8 /* Pods-TaxiCrameaTests.release.xcconfig */,
+				60CBBE9F2673391AB917BFBA /* Pods-TaxiCrameaUITests.debug.xcconfig */,
+				E43C240B9E524BC44BA64BD2 /* Pods-TaxiCrameaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847D53FD1E584573001A1C4F /* TaxiCramea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847D54261E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCramea" */;
+			buildPhases = (
+				492F9353E385C3B5448A3CAD /* [CP] Check Pods Manifest.lock */,
+				847D53FA1E584573001A1C4F /* Sources */,
+				847D53FB1E584573001A1C4F /* Frameworks */,
+				847D53FC1E584573001A1C4F /* Resources */,
+				CAFBD24E58C240E3B3F430CE /* [CP] Embed Pods Frameworks */,
+				9BDA8BD8BA8A1A1A8D421B2C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TaxiCramea;
+			productName = TaxiCramea;
+			productReference = 847D53FE1E584573001A1C4F /* TaxiCramea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847D54111E584573001A1C4F /* TaxiCrameaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847D54291E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCrameaTests" */;
+			buildPhases = (
+				952D4052BF3A77AE9FDE1224 /* [CP] Check Pods Manifest.lock */,
+				847D540E1E584573001A1C4F /* Sources */,
+				847D540F1E584573001A1C4F /* Frameworks */,
+				847D54101E584573001A1C4F /* Resources */,
+				CECC859647B678F618B684A5 /* [CP] Embed Pods Frameworks */,
+				02ECDADDA54660E3367F92E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847D54141E584573001A1C4F /* PBXTargetDependency */,
+			);
+			name = TaxiCrameaTests;
+			productName = TaxiCrameaTests;
+			productReference = 847D54121E584573001A1C4F /* TaxiCrameaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		847D541C1E584574001A1C4F /* TaxiCrameaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847D542C1E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCrameaUITests" */;
+			buildPhases = (
+				491379A9C5E9582E12813C54 /* [CP] Check Pods Manifest.lock */,
+				847D54191E584574001A1C4F /* Sources */,
+				847D541A1E584574001A1C4F /* Frameworks */,
+				847D541B1E584574001A1C4F /* Resources */,
+				9CE0571CC6360FBB63AF5082 /* [CP] Embed Pods Frameworks */,
+				04964A79F546D9804AD164DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847D541F1E584574001A1C4F /* PBXTargetDependency */,
+			);
+			name = TaxiCrameaUITests;
+			productName = TaxiCrameaUITests;
+			productReference = 847D541D1E584574001A1C4F /* TaxiCrameaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847D53F61E584573001A1C4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "админ";
+				TargetAttributes = {
+					847D53FD1E584573001A1C4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					847D54111E584573001A1C4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 847D53FD1E584573001A1C4F;
+					};
+					847D541C1E584574001A1C4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 847D53FD1E584573001A1C4F;
+					};
+				};
+			};
+			buildConfigurationList = 847D53F91E584573001A1C4F /* Build configuration list for PBXProject "TaxiCramea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847D53F51E584573001A1C4F;
+			productRefGroup = 847D53FF1E584573001A1C4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847D53FD1E584573001A1C4F /* TaxiCramea */,
+				847D54111E584573001A1C4F /* TaxiCrameaTests */,
+				847D541C1E584574001A1C4F /* TaxiCrameaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847D53FC1E584573001A1C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDD4781EDAD364004E6BAB /* BuyTableViewCell.xib in Resources */,
+				847D540C1E584573001A1C4F /* LaunchScreen.storyboard in Resources */,
+				84E666761EE70A0C00155FDA /* ViewForInfo.xib in Resources */,
+				847D54091E584573001A1C4F /* Assets.xcassets in Resources */,
+				0768975C1EDE9C3F00443543 /* LongTableViewCell.xib in Resources */,
+				847D54071E584573001A1C4F /* Main.storyboard in Resources */,
+				076897561EDE91C400443543 /* MainTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D54101E584573001A1C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D541B1E584574001A1C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02ECDADDA54660E3367F92E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04964A79F546D9804AD164DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		491379A9C5E9582E12813C54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		492F9353E385C3B5448A3CAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		952D4052BF3A77AE9FDE1224 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BDA8BD8BA8A1A1A8D421B2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CE0571CC6360FBB63AF5082 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAFBD24E58C240E3B3F430CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CECC859647B678F618B684A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847D53FA1E584573001A1C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8440B4451EDABFEB000BB138 /* User.swift in Sources */,
+				8400CB5C1EDAC6F2003ED5DC /* Avto.swift in Sources */,
+				076897581EDE956400443543 /* MainTableViewCell.swift in Sources */,
+				0768975E1EDE9C5500443543 /* LongTableViewCell.swift in Sources */,
+				0768975A1EDE96C400443543 /* Order.swift in Sources */,
+				B1C40CA91EEE88330045451D /* BuyViewController.swift in Sources */,
+				847D54041E584573001A1C4F /* ViewController.swift in Sources */,
+				84FDD4761EDAD339004E6BAB /* BuyTableViewCell.swift in Sources */,
+				84FDD4711EDAD154004E6BAB /* MainViewController.swift in Sources */,
+				847D54021E584573001A1C4F /* AppDelegate.swift in Sources */,
+				84265B7A1EE93F7B005FC13E /* OptionsViewController.swift in Sources */,
+				B1C40CA71EEE81A50045451D /* GradientView.swift in Sources */,
+				844475321ED96A470036AFC2 /* Const.swift in Sources */,
+				84EF709C1EE2EC6000232990 /* RegViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D540E1E584573001A1C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847D54171E584574001A1C4F /* TaxiCrameaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847D54191E584574001A1C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847D54221E584574001A1C4F /* TaxiCrameaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847D54141E584573001A1C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847D53FD1E584573001A1C4F /* TaxiCramea */;
+			targetProxy = 847D54131E584573001A1C4F /* PBXContainerItemProxy */;
+		};
+		847D541F1E584574001A1C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847D53FD1E584573001A1C4F /* TaxiCramea */;
+			targetProxy = 847D541E1E584574001A1C4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847D54051E584573001A1C4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847D54061E584573001A1C4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847D540A1E584573001A1C4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847D540B1E584573001A1C4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847D54241E584574001A1C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		847D54251E584574001A1C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847D54271E584574001A1C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C9DB284D6AD31606D7F86C /* Pods-TaxiCramea.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TaxiCramea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCramea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		847D54281E584574001A1C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0B44E3159687B9C8E9A7BB /* Pods-TaxiCramea.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TaxiCramea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCramea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		847D542A1E584574001A1C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389FCBC2B782EC5BF62463FD /* Pods-TaxiCrameaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaxiCrameaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCrameaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxiCramea.app/TaxiCramea";
+			};
+			name = Debug;
+		};
+		847D542B1E584574001A1C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C60429EF09BBCA5DC11FBA8 /* Pods-TaxiCrameaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TaxiCrameaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCrameaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaxiCramea.app/TaxiCramea";
+			};
+			name = Release;
+		};
+		847D542D1E584574001A1C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CBBE9F2673391AB917BFBA /* Pods-TaxiCrameaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TaxiCrameaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCrameaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TaxiCramea;
+			};
+			name = Debug;
+		};
+		847D542E1E584574001A1C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E43C240B9E524BC44BA64BD2 /* Pods-TaxiCrameaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TaxiCrameaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = sam.TaxiCrameaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TaxiCramea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847D53F91E584573001A1C4F /* Build configuration list for PBXProject "TaxiCramea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847D54241E584574001A1C4F /* Debug */,
+				847D54251E584574001A1C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847D54261E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCramea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847D54271E584574001A1C4F /* Debug */,
+				847D54281E584574001A1C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847D54291E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCrameaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847D542A1E584574001A1C4F /* Debug */,
+				847D542B1E584574001A1C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847D542C1E584574001A1C4F /* Build configuration list for PBXNativeTarget "TaxiCrameaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847D542D1E584574001A1C4F /* Debug */,
+				847D542E1E584574001A1C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847D53F61E584573001A1C4F /* Project object */;
+}

@@ -1,0 +1,1801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0104830478F68244D9627F6DC205D940 /* MetadataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69A1CCA52D1F6E0FA9C813868E78982 /* MetadataManager.swift */; };
+		02680A9257D954754662D438F595EB01 /* Toaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C68E28697D4F3646F01D0A2F730BF17A /* Toaster-dummy.m */; };
+		07B31C8D7DDEE3DC9F3364E0993E3FDA /* MaskedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C5B8CA52FE237D3FF97312297AF0B5 /* MaskedTextFieldDelegate.swift */; };
+		0A0E4409D9DAE435A35BAD353F02E60A /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C4C4360459E878449CE589D33BC50 /* Formatter.swift */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC469179753DFBC9635B3BB422027 /* Timeline.swift */; };
+		1123F7D0521D3DD18A3D14A63FB0C477 /* Toaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B3B040967CA93C1C84EF1AED5EA5EDF /* Toaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13FCF14212970EC9BD76BD80C8E8D43A /* OptionalValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A3F31E24B4DEFC55F4FE73932ECF9 /* OptionalValueState.swift */; };
+		17F98C7778A8F6757AAF673C767C6DBA /* Pods-TaxiCrameaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FE81E9E725C9A968239FCE2B701D31A /* Pods-TaxiCrameaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C953E8A694CE80FC5A5A86CE4A0686 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFE743B583E56658C161DA86F5D8548 /* FormatSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6D465DE78F4CD444723C7472981C3 /* FormatSanitizer.swift */; };
+		2347324617E9AF7C8ED379A26BE913A6 /* Next.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029AA5F5A51460199CCB7FD0B88EB08A /* Next.swift */; };
+		2663EA5BEFA46169728C5EFBA91FF063 /* CaretString.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE729453C9F22B6FCCBBF7EC6AF437F5 /* CaretString.swift */; };
+		279EE646CB901F75E2388298357F2004 /* Pods-TaxiCramea-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C50BF7A67A73966CC199EEEC6D14F /* Pods-TaxiCramea-dummy.m */; };
+		31607743AAE4D14C127B3818F5B201A7 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ADE7DBD917230908630CA2FD25206D /* SearchTextField.swift */; };
+		345550ECBA5ABA4FF86DCB480D4A3A58 /* PhoneNumberParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84D34BA59A3D55A70D77387FE25418B /* PhoneNumberParser.swift */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBD87E5F75A63BF868B0E59A227A66D /* TaskDelegate.swift */; };
+		47E0505B6D6CF0E20E512C3FA88F2041 /* InputMask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30AE3F53B125E9792D089D679571741C /* InputMask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B0D88B591257FE53F7003CEE115CE1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B33AD86396F2CF926382633E14AC08C0 /* QuartzCore.framework */; };
+		4F9F1A87FA2940B18DBD32B0180D50FA /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 4344839CC7690F7950213314CD2719AD /* PhoneNumberMetadata.json */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8900BC161085B0198E0DEFDA40CB8EF2 /* Request.swift */; };
+		54BDBF63A85D59EC821CF45FD272B0AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1808DA3948C77B5F18257239525607E /* UIKit.framework */; };
+		5743247028C49F98C4CC4CB9E9E4126F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		584E0F91D6B97E567D61D8A697553CEF /* InterfaceBuilderSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC447F4452DDF1A4C05692BF7CB12B00 /* InterfaceBuilderSupport.swift */; };
+		5876BA1E639244FFA75B4055FD3BA74F /* Toaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97DECBA11C773F265FA854AC4FFF701E /* Toaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		599FCB585BC9E290ED412A0633E2CE0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		5F74DB5E632AB8F370CADB9A57A62905 /* ParseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560AA1FB821473562ADF64DB3FAA2F2C /* ParseManager.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A96D43F6B2B1CC0DFBEA15F5FE5C51 /* DispatchQueue+Alamofire.swift */; };
+		61536BB30EC36D7AC1845CDBCA394763 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8332B8C0BAB827368EC6B870C01AFF81 /* CoreTelephony.framework */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C5AEE27599E444152CA63FBE67ED57 /* ServerTrustPolicy.swift */; };
+		6DA3D31676254A6B1A7DFF5550F6AF2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		6FFD5BB6AA1EDF49AB0F9315DA754719 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2934C05C8EF2D78A16ECEEC4AAA31D /* ToastWindow.swift */; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		74F886889F726D1419C0F2ED4480CDC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		777D17D228B62C3AAFA3D7D996276FC2 /* InputMask.h in Headers */ = {isa = PBXBuildFile; fileRef = E4C8E04C1612F7D3E448C9FA2356E513 /* InputMask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FEC8912DC08BB7084BB94F1B54E923 /* NSCharacterSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C684B419904BAA5C124BFD2B8C233D45 /* NSCharacterSet.swift */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4535A2B655741A0AE37F9C4F039149D /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F23C0B2B8429DAD06BC3BC0382522F2 /* Result.swift */; };
+		880286FFB310739DB6CB92F6F17A5662 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B74A5E47646A8C0A6D96F8356E12CE8 /* Mask.swift */; };
+		90547DF4AE457BDFFE0E476200CFAE8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		9BF0B3132715704E433B205423D73740 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1E80BEF6FB5624561884D06C0E382 /* Constants.swift */; };
+		9C8BF7D4C243818BF3FBF03E54F44295 /* PhoneNumberKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A49888CDFA82FA18691FD23C69FC68AA /* PhoneNumberKit-dummy.m */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58864C7F5A043E49F86CC079186FCFCE /* AFError.swift */; };
+		A1874C70043B050927A0FD2700432467 /* EOLState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D083ABF4B5325AF319B2E61EF47BF2D /* EOLState.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D9FE4B5C1C1F23973B19A3A0247C29 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3CADC2D53EC2B9CE0461FF1AE1B5F /* Alamofire-dummy.m */; };
+		AC923E225A6BE4C2DB4B9AD835BADAD4 /* ValueState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB317E9F6BF5AD1F7A877B4D0BB80326 /* ValueState.swift */; };
+		ADF53BD0BD741215D07B3213FA5190FF /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = F283A6C503F4F8228C25834D054BE7FE /* State.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A32853C646C9DE766415603A0B567BA /* SessionManager.swift */; };
+		AECF93568D922159B76A632196FCA6E9 /* NSRegularExpression+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0F790417BEEEFB5CF403225099D8F7 /* NSRegularExpression+Swift.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057D010F668DE6F0F2BE54ABCD7A8515 /* MultipartFormData.swift */; };
+		B6EADA01029546ADA5D4718F1471799C /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C81FDA7D7D7A3BAB776A0ED2E254ED3 /* PhoneNumber.swift */; };
+		BB4C17536751282E81BD9FF480DDF6F4 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3AD21F8F181C6F59D27FAFA7939DDD /* ToastView.swift */; };
+		BB6CDDAD9203D9D24D85A05844D0ED34 /* Compiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2165C35BD670F1CFA0820B850ABFA /* Compiler.swift */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB8D9CCC8CF1CB924F4E093B31EDA5 /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CCCA52DC3BF7A420E71424F7DD0E01 /* ParameterEncoding.swift */; };
+		C528DDF9FAA5F88D35775D963D330E8D /* SearchTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8661A18DA05C58142574C48D4625FC0E /* SearchTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C63059C4F18FCDC31301E823083F60E6 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5D2D1CC999341D6DB0C0D03481C5F /* ToastCenter.swift */; };
+		C9B4B6215A65F6B43439359BA30C2F7E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1039D3BDFAAF2E2BC1C278EA9BD5F343 /* String.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17AC1974EA62505953C7AE217848ED /* Response.swift */; };
+		D40D3F49196275ADF0DF198F7C8D9246 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CB5C0BA6FB36DC2D2677BFFD5F83E /* Toast.swift */; };
+		D4D11238776F6517BE1E5BF70ABBF452 /* PhoneNumberKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD588C4EA7312397CB341A7C961E0CC /* PhoneNumberKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8303D3667F6CC05A6C2BADFDFD7A3C4 /* FixedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52BFF607E75A9EE52338AAEE0AD203C /* FixedState.swift */; };
+		D83522A96EB0E8AC32E66D149A4C7D13 /* MetadataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D088F5C9936123A0C29459F32048A /* MetadataTypes.swift */; };
+		DC886CD29BB968D80DB5D773995EA8B1 /* FreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A967DB894A32FF17C2018ACF46012A /* FreeState.swift */; };
+		DFAFC1AB1948A435C7371CC21040ACCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		E05ED3C5F062E0680C68F739C2FD544F /* PolyMaskTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0494C79E35291E346A8451CB149C7E /* PolyMaskTextFieldDelegate.swift */; };
+		E17ACA7C6C015C7166E680EE9B09BC9C /* Pods-TaxiCrameaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CFD8AE31BDE0CABD3321BF0BE6589E /* Pods-TaxiCrameaTests-dummy.m */; };
+		E2CDF70ADCB177E5A75995E34BF537A1 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C72987C7644BEFFCB4AD1078EA788F /* TextField.swift */; };
+		E44074B9FB2953B85AE388E3BDBC97BB /* Pods-TaxiCrameaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AF3BF2ABC1D3C7068A1F2FFD50DBEF /* Pods-TaxiCrameaUITests-dummy.m */; };
+		EA9AA5B17206370D1B709900EBEE6274 /* Pods-TaxiCrameaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D5C8F1894603D0A14022BE13EEC0D31 /* Pods-TaxiCrameaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF6FCEA71545D5BCC3C30E62E860F75 /* SearchTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD06DA2889132E0B0BC1D17165BDC3 /* SearchTextField-dummy.m */; };
+		EDF51A7AB05F51B39C6FED34934AD363 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B43555F423C224C873F21BA0C779966 /* Foundation.framework */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB62F6A24768672D0D69F9A152A0828 /* Notifications.swift */; };
+		F0AAC8C0A171F5D16D5CC4EDFCFD3AA1 /* RegexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05F1785D7646E7A511B9446491EE994 /* RegexManager.swift */; };
+		F273324F5BE6D5037697F89D1024CEFA /* CaretStringIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9430118309AABC55637A5A01FD1A990 /* CaretStringIterator.swift */; };
+		F3471ADCD4C3F3995D27362A2DA5054A /* PhoneNumberKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950CB6973F49949E9EDD3CB10EF577AB /* PhoneNumberKit.swift */; };
+		F562C8CB7DF0B0F7CE125BFFE6155505 /* Pods-TaxiCramea-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C82CE3C31945CE0B5E33A2E742B86E0 /* Pods-TaxiCramea-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E63AA03D993CB9603173CAFD16992 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2C98E5CAC31A179B0BF261E12569B /* Alamofire.swift */; };
+		FD2E20B69C2E19818E62F6570D93917C /* PartialFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DED5737ABA6EAB95044C3FDFC7DDA2 /* PartialFormatter.swift */; };
+		FD7D19C56EC1D5C4F14B246D15D811AA /* InputMask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F8E65C5422985249CA7D6B0E60003C2 /* InputMask-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34520E756E252BB1FB273D85CE05A60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		3A1EC2F73028A5001AA2BDEBC5E1C46E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C5BD10883BD185426DD737247F56DEC;
+			remoteInfo = PhoneNumberKit;
+		};
+		5F83C8FBA963CD300DC78240A97A7988 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47130D42BDB761C86FFD29CAF89D281A;
+			remoteInfo = InputMask;
+		};
+		6790B5C127388D554C3288E243AEF00B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF864F3F99FB1D915705901FB57BD435;
+			remoteInfo = Toaster;
+		};
+		E860CC740F1662575556DE6A7978AA7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63DE44E7AFD21C19CC2430C8BB2B989B;
+			remoteInfo = SearchTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C5D2D1CC999341D6DB0C0D03481C5F /* ToastCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastCenter.swift; path = Sources/ToastCenter.swift; sourceTree = "<group>"; };
+		00C953E8A694CE80FC5A5A86CE4A0686 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		029AA5F5A51460199CCB7FD0B88EB08A /* Next.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Next.swift; path = Source/InputMask/InputMask/Classes/Model/Next.swift; sourceTree = "<group>"; };
+		057D010F668DE6F0F2BE54ABCD7A8515 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		07D2165C35BD670F1CFA0820B850ABFA /* Compiler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compiler.swift; path = Source/InputMask/InputMask/Classes/Helper/Compiler.swift; sourceTree = "<group>"; };
+		08C5B8CA52FE237D3FF97312297AF0B5 /* MaskedTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaskedTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/MaskedTextFieldDelegate.swift; sourceTree = "<group>"; };
+		09A967DB894A32FF17C2018ACF46012A /* FreeState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FreeState.swift; sourceTree = "<group>"; };
+		0AC52F665DF8C22C61FD36B9DBEC99B9 /* Pods-TaxiCrameaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCrameaTests-resources.sh"; sourceTree = "<group>"; };
+		0C81FDA7D7D7A3BAB776A0ED2E254ED3 /* PhoneNumber.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = PhoneNumberKit/PhoneNumber.swift; sourceTree = "<group>"; };
+		0C8F31929E718783DEC843DF533AFAE4 /* Pods-TaxiCrameaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCrameaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D083ABF4B5325AF319B2E61EF47BF2D /* EOLState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EOLState.swift; path = Source/InputMask/InputMask/Classes/Model/State/EOLState.swift; sourceTree = "<group>"; };
+		1039D3BDFAAF2E2BC1C278EA9BD5F343 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Source/InputMask/InputMask/Classes/Helper/String.swift; sourceTree = "<group>"; };
+		11D9FE4B5C1C1F23973B19A3A0247C29 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		156F7D80FB30AF7090790036D25616F7 /* InputMask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InputMask.framework; path = InputMask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E4978851DEC559760A6E096724DE3E4 /* Pods-TaxiCrameaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaxiCrameaUITests.modulemap"; sourceTree = "<group>"; };
+		1EC5C6442648B12BE2E4048D57232EA6 /* Pods_TaxiCrameaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaxiCrameaTests.framework; path = "Pods-TaxiCrameaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21842886E794A3866B6F6E6B98911B57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29AF3BF2ABC1D3C7068A1F2FFD50DBEF /* Pods-TaxiCrameaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaxiCrameaUITests-dummy.m"; sourceTree = "<group>"; };
+		29E3B19406756116545976086D6AB0DF /* PhoneNumberKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PhoneNumberKit.framework; path = PhoneNumberKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C82CE3C31945CE0B5E33A2E742B86E0 /* Pods-TaxiCramea-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaxiCramea-umbrella.h"; sourceTree = "<group>"; };
+		2FB62F6A24768672D0D69F9A152A0828 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		30501C29459317586B8FF0928FCAA60E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30AE3F53B125E9792D089D679571741C /* InputMask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-umbrella.h"; sourceTree = "<group>"; };
+		386CF4D75BE95832E5014C457A835EE6 /* Pods_TaxiCramea.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaxiCramea.framework; path = "Pods-TaxiCramea.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D6D088F5C9936123A0C29459F32048A /* MetadataTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataTypes.swift; path = PhoneNumberKit/MetadataTypes.swift; sourceTree = "<group>"; };
+		3E3AD21F8F181C6F59D27FAFA7939DDD /* ToastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastView.swift; path = Sources/ToastView.swift; sourceTree = "<group>"; };
+		3F23C0B2B8429DAD06BC3BC0382522F2 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		3F8E65C5422985249CA7D6B0E60003C2 /* InputMask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InputMask-dummy.m"; sourceTree = "<group>"; };
+		422C4C4360459E878449CE589D33BC50 /* Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Formatter.swift; path = PhoneNumberKit/Formatter.swift; sourceTree = "<group>"; };
+		4344839CC7690F7950213314CD2719AD /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; includeInIndex = 1; name = PhoneNumberMetadata.json; path = PhoneNumberKit/Resources/PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		44CCCA52DC3BF7A420E71424F7DD0E01 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		476E52E0AD2E36DBC45324C2AAFCF06E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A96D43F6B2B1CC0DFBEA15F5FE5C51 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		4B43555F423C224C873F21BA0C779966 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4F0494C79E35291E346A8451CB149C7E /* PolyMaskTextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolyMaskTextFieldDelegate.swift; path = Source/InputMask/InputMask/Classes/View/PolyMaskTextFieldDelegate.swift; sourceTree = "<group>"; };
+		4F2D6298808E9B354F66AD33E2FF7322 /* Pods-TaxiCramea.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaxiCramea.modulemap"; sourceTree = "<group>"; };
+		4FDD06DA2889132E0B0BC1D17165BDC3 /* SearchTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SearchTextField-dummy.m"; sourceTree = "<group>"; };
+		54D4296B608DE209EB43EEFF26AE7BFA /* Pods-TaxiCrameaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaxiCrameaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		560AA1FB821473562ADF64DB3FAA2F2C /* ParseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseManager.swift; path = PhoneNumberKit/ParseManager.swift; sourceTree = "<group>"; };
+		5805241C4F7778ABBD68B6953460D094 /* Pods-TaxiCrameaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCrameaTests.release.xcconfig"; sourceTree = "<group>"; };
+		58864C7F5A043E49F86CC079186FCFCE /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		58A1D4D1A2F16447C472B45625727127 /* Pods-TaxiCrameaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCrameaUITests-resources.sh"; sourceTree = "<group>"; };
+		59026F5D8F50EEDC6428D46656DFD3AD /* InputMask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = InputMask.modulemap; sourceTree = "<group>"; };
+		5A32853C646C9DE766415603A0B567BA /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		5A946B1EF87CAC30C63D1717DBDC6C8C /* Toaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toaster.xcconfig; sourceTree = "<group>"; };
+		5B74A5E47646A8C0A6D96F8356E12CE8 /* Mask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mask.swift; path = Source/InputMask/InputMask/Classes/Mask.swift; sourceTree = "<group>"; };
+		5C0F790417BEEEFB5CF403225099D8F7 /* NSRegularExpression+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSRegularExpression+Swift.swift"; path = "PhoneNumberKit/NSRegularExpression+Swift.swift"; sourceTree = "<group>"; };
+		612F94E7E8E4D0D9C52264C2AF13B8AA /* Pods-TaxiCramea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCramea.debug.xcconfig"; sourceTree = "<group>"; };
+		61669ADE1583014EA7935704170DF7D4 /* SearchTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SearchTextField.framework; path = SearchTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6255FE549A7AD27398D7921672C13A64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67EEAD0FFAA815BEC619374F19C10D0C /* Toaster-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-prefix.pch"; sourceTree = "<group>"; };
+		76A2C98E5CAC31A179B0BF261E12569B /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		7884871C85B1407342E8D5044EAB94BE /* PhoneNumberKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-prefix.pch"; sourceTree = "<group>"; };
+		79DED5737ABA6EAB95044C3FDFC7DDA2 /* PartialFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartialFormatter.swift; path = PhoneNumberKit/PartialFormatter.swift; sourceTree = "<group>"; };
+		7B3B040967CA93C1C84EF1AED5EA5EDF /* Toaster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toaster.h; path = Sources/Toaster.h; sourceTree = "<group>"; };
+		7B95A514355D0EE11A5DA3EED7DFE8CB /* Pods-TaxiCramea-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaxiCramea-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7BA68D7AB63DD7B0326B0D7BB8F39988 /* Pods-TaxiCramea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCramea.release.xcconfig"; sourceTree = "<group>"; };
+		7CC645E2F20F4FF4D5EE585718778290 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6DC469179753DFBC9635B3BB422027 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		8332B8C0BAB827368EC6B870C01AFF81 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		84CFD8AE31BDE0CABD3321BF0BE6589E /* Pods-TaxiCrameaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaxiCrameaTests-dummy.m"; sourceTree = "<group>"; };
+		8661A18DA05C58142574C48D4625FC0E /* SearchTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchTextField-umbrella.h"; sourceTree = "<group>"; };
+		87AA257A0F4216CE3C85CAF8B7FED188 /* Pods-TaxiCramea-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCramea-resources.sh"; sourceTree = "<group>"; };
+		8900BC161085B0198E0DEFDA40CB8EF2 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		8BB3CADC2D53EC2B9CE0461FF1AE1B5F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		8BDE6879C892813F11836DFA83172CF9 /* PhoneNumberKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PhoneNumberKit.modulemap; sourceTree = "<group>"; };
+		8D5C8F1894603D0A14022BE13EEC0D31 /* Pods-TaxiCrameaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaxiCrameaUITests-umbrella.h"; sourceTree = "<group>"; };
+		8EA7D6BAE71D82A248B4443A65A77841 /* SearchTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SearchTextField.modulemap; sourceTree = "<group>"; };
+		8FFBA51F8B1B1CA1062EC83B848F0988 /* Pods-TaxiCramea-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaxiCramea-acknowledgements.plist"; sourceTree = "<group>"; };
+		91F87F4B57B98F280A0F7664A020A07B /* Pods-TaxiCramea-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCramea-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		950CB6973F49949E9EDD3CB10EF577AB /* PhoneNumberKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberKit.swift; path = PhoneNumberKit/PhoneNumberKit.swift; sourceTree = "<group>"; };
+		95156B261F39A45EF76B2471C9F98040 /* Pods-TaxiCrameaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaxiCrameaTests.modulemap"; sourceTree = "<group>"; };
+		9705BDB919E4AADDF4BE0D3B1CD579D1 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		97B61E1AFA2EE19688499928200347DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97DECBA11C773F265FA854AC4FFF701E /* Toaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toaster-umbrella.h"; sourceTree = "<group>"; };
+		99A4C9A1ACDCA76D5CF3E9E92BEB9042 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		9BC4E869450D69EF86B3FACCFD71ABE4 /* Pods-TaxiCrameaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCrameaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9FE81E9E725C9A968239FCE2B701D31A /* Pods-TaxiCrameaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaxiCrameaTests-umbrella.h"; sourceTree = "<group>"; };
+		A3E7883DBD024D79B21D9ABEE985680A /* Pods-TaxiCrameaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCrameaTests-frameworks.sh"; sourceTree = "<group>"; };
+		A49888CDFA82FA18691FD23C69FC68AA /* PhoneNumberKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PhoneNumberKit-dummy.m"; sourceTree = "<group>"; };
+		A54546AD34BC1C482A1C3DC4D2D7421E /* Pods-TaxiCrameaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaxiCrameaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B85CBBAE6502ADFCB513CC6117C578 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		ABD588C4EA7312397CB341A7C961E0CC /* PhoneNumberKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PhoneNumberKit-umbrella.h"; sourceTree = "<group>"; };
+		AC447F4452DDF1A4C05692BF7CB12B00 /* InterfaceBuilderSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterfaceBuilderSupport.swift; path = Source/InputMask/InputMask/Classes/View/InterfaceBuilderSupport.swift; sourceTree = "<group>"; };
+		ACAB8D9CCC8CF1CB924F4E093B31EDA5 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		B33AD86396F2CF926382633E14AC08C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B69A1CCA52D1F6E0FA9C813868E78982 /* MetadataManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetadataManager.swift; path = PhoneNumberKit/MetadataManager.swift; sourceTree = "<group>"; };
+		C12EF42242B3F8C676AAA7055F6A0EEF /* Pods-TaxiCrameaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaxiCrameaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1C72987C7644BEFFCB4AD1078EA788F /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = PhoneNumberKit/UI/TextField.swift; sourceTree = "<group>"; };
+		C3C5AEE27599E444152CA63FBE67ED57 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		C684B419904BAA5C124BFD2B8C233D45 /* NSCharacterSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSCharacterSet.swift; path = Source/InputMask/InputMask/Classes/Helper/NSCharacterSet.swift; sourceTree = "<group>"; };
+		C68E28697D4F3646F01D0A2F730BF17A /* Toaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toaster-dummy.m"; sourceTree = "<group>"; };
+		C82E1E5A0443B116F441ED8BD7CC54EA /* InputMask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InputMask.xcconfig; sourceTree = "<group>"; };
+		C84D34BA59A3D55A70D77387FE25418B /* PhoneNumberParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberParser.swift; path = PhoneNumberKit/PhoneNumberParser.swift; sourceTree = "<group>"; };
+		C9430118309AABC55637A5A01FD1A990 /* CaretStringIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretStringIterator.swift; path = Source/InputMask/InputMask/Classes/Helper/CaretStringIterator.swift; sourceTree = "<group>"; };
+		CB317E9F6BF5AD1F7A877B4D0BB80326 /* ValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/ValueState.swift; sourceTree = "<group>"; };
+		CFBD87E5F75A63BF868B0E59A227A66D /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		D1808DA3948C77B5F18257239525607E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D2CE6277C6F7201520DED284A5C5D54C /* Pods_TaxiCrameaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaxiCrameaUITests.framework; path = "Pods-TaxiCrameaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D415B1CBC2FC962868DA62B2782DAF2D /* Pods-TaxiCrameaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaxiCrameaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D4535A2B655741A0AE37F9C4F039149D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		D453EFF2051543510D3C977AF5ECDCD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4E2899B1C4C6F9D1373936E3BA2C768 /* Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toaster.framework; path = Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D52BFF607E75A9EE52338AAEE0AD203C /* FixedState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FixedState.swift; path = Source/InputMask/InputMask/Classes/Model/State/FixedState.swift; sourceTree = "<group>"; };
+		D87CB5C0BA6FB36DC2D2677BFFD5F83E /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Sources/Toast.swift; sourceTree = "<group>"; };
+		D9BC0F0159F79CC42012C90D5396E881 /* PhoneNumberKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PhoneNumberKit.xcconfig; sourceTree = "<group>"; };
+		DA7103DA482A826E1BBDB1574D335AE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC17AC1974EA62505953C7AE217848ED /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		DC2071DDCAAAE65C7E9F62CCEC7B05BF /* SearchTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SearchTextField.xcconfig; sourceTree = "<group>"; };
+		DD2934C05C8EF2D78A16ECEEC4AAA31D /* ToastWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToastWindow.swift; path = Sources/ToastWindow.swift; sourceTree = "<group>"; };
+		DE729453C9F22B6FCCBBF7EC6AF437F5 /* CaretString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaretString.swift; path = Source/InputMask/InputMask/Classes/Model/CaretString.swift; sourceTree = "<group>"; };
+		E05F1785D7646E7A511B9446491EE994 /* RegexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexManager.swift; path = PhoneNumberKit/RegexManager.swift; sourceTree = "<group>"; };
+		E0D6D465DE78F4CD444723C7472981C3 /* FormatSanitizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatSanitizer.swift; path = Source/InputMask/InputMask/Classes/Helper/FormatSanitizer.swift; sourceTree = "<group>"; };
+		E49A3F31E24B4DEFC55F4FE73932ECF9 /* OptionalValueState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalValueState.swift; path = Source/InputMask/InputMask/Classes/Model/State/OptionalValueState.swift; sourceTree = "<group>"; };
+		E49E63AA03D993CB9603173CAFD16992 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		E4C8E04C1612F7D3E448C9FA2356E513 /* InputMask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InputMask.h; path = Source/InputMask/InputMask/Classes/InputMask.h; sourceTree = "<group>"; };
+		E81D6EA43E6EEBE2FD15505DAFB3C547 /* SearchTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SearchTextField-prefix.pch"; sourceTree = "<group>"; };
+		EA6C50BF7A67A73966CC199EEEC6D14F /* Pods-TaxiCramea-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaxiCramea-dummy.m"; sourceTree = "<group>"; };
+		F12456BA502A44CC45988DD65ED43BCB /* InputMask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InputMask-prefix.pch"; sourceTree = "<group>"; };
+		F1ADE7DBD917230908630CA2FD25206D /* SearchTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchTextField.swift; path = SearchTextField/Classes/SearchTextField.swift; sourceTree = "<group>"; };
+		F283A6C503F4F8228C25834D054BE7FE /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Source/InputMask/InputMask/Classes/Model/State.swift; sourceTree = "<group>"; };
+		F2D1E80BEF6FB5624561884D06C0E382 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = PhoneNumberKit/Constants.swift; sourceTree = "<group>"; };
+		F71C343EDB74973A1677B44CEE507DFA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7525EC22ACA00CF0A917E894F3FFDED /* Toaster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Toaster.modulemap; sourceTree = "<group>"; };
+		FD3717911F1952CDB36A19CDE9700D6B /* Pods-TaxiCrameaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaxiCrameaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FDD176FA9861CB02DC673321005F97DC /* Pods-TaxiCrameaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaxiCrameaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17880DBD14740D8ECD431DD43711B138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5743247028C49F98C4CC4CB9E9E4126F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD2CBBF7FBF20992AEBE30C4589D525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DA3D31676254A6B1A7DFF5550F6AF2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4543F863405086A1714FEC5938AB1E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAFC1AB1948A435C7371CC21040ACCE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761554F5306F577313F35D0C045A5B68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61536BB30EC36D7AC1845CDBCA394763 /* CoreTelephony.framework in Frameworks */,
+				599FCB585BC9E290ED412A0633E2CE0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F32EC3FCC0ACCC43F31CAE46D8F5FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90547DF4AE457BDFFE0E476200CFAE8C /* Foundation.framework in Frameworks */,
+				4B0D88B591257FE53F7003CEE115CE1E /* QuartzCore.framework in Frameworks */,
+				54BDBF63A85D59EC821CF45FD272B0AC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACB1B2EC323C133DAC58E091FE4B55B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F886889F726D1419C0F2ED4480CDC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6B5875A5F29C8E3D470EAFEF6CF3135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF51A7AB05F51B39C6FED34934AD363 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02A803DD2AD372D5C66871C2156930F2 /* PhoneNumberKit */ = {
+			isa = PBXGroup;
+			children = (
+				C309C2CDF03E1CF112E5F2D2460CF0B4 /* PhoneNumberKitCore */,
+				3D579EA1400CD59574B6D70C1E0E2E13 /* Support Files */,
+				6263F8035298F9B7EEA85C56C634130E /* UIKit */,
+			);
+			name = PhoneNumberKit;
+			path = PhoneNumberKit;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFCA57B8AF6838AE871A4E61C31BAF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		296ADABA33ABA5A95296F4F9451A7033 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30501C29459317586B8FF0928FCAA60E /* Info.plist */,
+				8EA7D6BAE71D82A248B4443A65A77841 /* SearchTextField.modulemap */,
+				DC2071DDCAAAE65C7E9F62CCEC7B05BF /* SearchTextField.xcconfig */,
+				4FDD06DA2889132E0B0BC1D17165BDC3 /* SearchTextField-dummy.m */,
+				E81D6EA43E6EEBE2FD15505DAFB3C547 /* SearchTextField-prefix.pch */,
+				8661A18DA05C58142574C48D4625FC0E /* SearchTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SearchTextField";
+			sourceTree = "<group>";
+		};
+		2D068F62961C2C6B9BB0E918582AACF1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F9E38F11A7AEAA74098FCB0FA3F931FE /* Pods-TaxiCramea */,
+				7F1082D867C0E3047941FC50B72AF8AB /* Pods-TaxiCrameaTests */,
+				7FD96D31B34C434026C2E75FF993955B /* Pods-TaxiCrameaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3D579EA1400CD59574B6D70C1E0E2E13 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6255FE549A7AD27398D7921672C13A64 /* Info.plist */,
+				8BDE6879C892813F11836DFA83172CF9 /* PhoneNumberKit.modulemap */,
+				D9BC0F0159F79CC42012C90D5396E881 /* PhoneNumberKit.xcconfig */,
+				A49888CDFA82FA18691FD23C69FC68AA /* PhoneNumberKit-dummy.m */,
+				7884871C85B1407342E8D5044EAB94BE /* PhoneNumberKit-prefix.pch */,
+				ABD588C4EA7312397CB341A7C961E0CC /* PhoneNumberKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PhoneNumberKit";
+			sourceTree = "<group>";
+		};
+		4528F281DD234CC793E618CF900BDE06 /* SearchTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F1ADE7DBD917230908630CA2FD25206D /* SearchTextField.swift */,
+				296ADABA33ABA5A95296F4F9451A7033 /* Support Files */,
+			);
+			name = SearchTextField;
+			path = SearchTextField;
+			sourceTree = "<group>";
+		};
+		4E41040EB239D8382366FAC63EDC9D57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC645E2F20F4FF4D5EE585718778290 /* Alamofire.framework */,
+				156F7D80FB30AF7090790036D25616F7 /* InputMask.framework */,
+				29E3B19406756116545976086D6AB0DF /* PhoneNumberKit.framework */,
+				386CF4D75BE95832E5014C457A835EE6 /* Pods_TaxiCramea.framework */,
+				1EC5C6442648B12BE2E4048D57232EA6 /* Pods_TaxiCrameaTests.framework */,
+				D2CE6277C6F7201520DED284A5C5D54C /* Pods_TaxiCrameaUITests.framework */,
+				61669ADE1583014EA7935704170DF7D4 /* SearchTextField.framework */,
+				D4E2899B1C4C6F9D1373936E3BA2C768 /* Toaster.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61BB895C1CEAC4B1892F0A0195A8EEAC /* Toaster */ = {
+			isa = PBXGroup;
+			children = (
+				D87CB5C0BA6FB36DC2D2677BFFD5F83E /* Toast.swift */,
+				00C5D2D1CC999341D6DB0C0D03481C5F /* ToastCenter.swift */,
+				7B3B040967CA93C1C84EF1AED5EA5EDF /* Toaster.h */,
+				3E3AD21F8F181C6F59D27FAFA7939DDD /* ToastView.swift */,
+				DD2934C05C8EF2D78A16ECEEC4AAA31D /* ToastWindow.swift */,
+				9CD8CFC3F58A6823406FCEF6DF0DCEDD /* Support Files */,
+			);
+			name = Toaster;
+			path = Toaster;
+			sourceTree = "<group>";
+		};
+		6263F8035298F9B7EEA85C56C634130E /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				C1C72987C7644BEFFCB4AD1078EA788F /* TextField.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		76E14A8D77B4069394914547635501B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD49685DE6D1B8E10CA3B2AFF5039C7A /* Alamofire */,
+				A261D0BC85213D0DF63188C9DE9EBA1C /* InputMask */,
+				02A803DD2AD372D5C66871C2156930F2 /* PhoneNumberKit */,
+				4528F281DD234CC793E618CF900BDE06 /* SearchTextField */,
+				61BB895C1CEAC4B1892F0A0195A8EEAC /* Toaster */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				76E14A8D77B4069394914547635501B5 /* Pods */,
+				4E41040EB239D8382366FAC63EDC9D57 /* Products */,
+				2D068F62961C2C6B9BB0E918582AACF1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F1082D867C0E3047941FC50B72AF8AB /* Pods-TaxiCrameaTests */ = {
+			isa = PBXGroup;
+			children = (
+				21842886E794A3866B6F6E6B98911B57 /* Info.plist */,
+				95156B261F39A45EF76B2471C9F98040 /* Pods-TaxiCrameaTests.modulemap */,
+				C12EF42242B3F8C676AAA7055F6A0EEF /* Pods-TaxiCrameaTests-acknowledgements.markdown */,
+				FDD176FA9861CB02DC673321005F97DC /* Pods-TaxiCrameaTests-acknowledgements.plist */,
+				84CFD8AE31BDE0CABD3321BF0BE6589E /* Pods-TaxiCrameaTests-dummy.m */,
+				A3E7883DBD024D79B21D9ABEE985680A /* Pods-TaxiCrameaTests-frameworks.sh */,
+				0AC52F665DF8C22C61FD36B9DBEC99B9 /* Pods-TaxiCrameaTests-resources.sh */,
+				9FE81E9E725C9A968239FCE2B701D31A /* Pods-TaxiCrameaTests-umbrella.h */,
+				A54546AD34BC1C482A1C3DC4D2D7421E /* Pods-TaxiCrameaTests.debug.xcconfig */,
+				5805241C4F7778ABBD68B6953460D094 /* Pods-TaxiCrameaTests.release.xcconfig */,
+			);
+			name = "Pods-TaxiCrameaTests";
+			path = "Target Support Files/Pods-TaxiCrameaTests";
+			sourceTree = "<group>";
+		};
+		7FD96D31B34C434026C2E75FF993955B /* Pods-TaxiCrameaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				97B61E1AFA2EE19688499928200347DF /* Info.plist */,
+				1E4978851DEC559760A6E096724DE3E4 /* Pods-TaxiCrameaUITests.modulemap */,
+				54D4296B608DE209EB43EEFF26AE7BFA /* Pods-TaxiCrameaUITests-acknowledgements.markdown */,
+				D415B1CBC2FC962868DA62B2782DAF2D /* Pods-TaxiCrameaUITests-acknowledgements.plist */,
+				29AF3BF2ABC1D3C7068A1F2FFD50DBEF /* Pods-TaxiCrameaUITests-dummy.m */,
+				FD3717911F1952CDB36A19CDE9700D6B /* Pods-TaxiCrameaUITests-frameworks.sh */,
+				58A1D4D1A2F16447C472B45625727127 /* Pods-TaxiCrameaUITests-resources.sh */,
+				8D5C8F1894603D0A14022BE13EEC0D31 /* Pods-TaxiCrameaUITests-umbrella.h */,
+				0C8F31929E718783DEC843DF533AFAE4 /* Pods-TaxiCrameaUITests.debug.xcconfig */,
+				9BC4E869450D69EF86B3FACCFD71ABE4 /* Pods-TaxiCrameaUITests.release.xcconfig */,
+			);
+			name = "Pods-TaxiCrameaUITests";
+			path = "Target Support Files/Pods-TaxiCrameaUITests";
+			sourceTree = "<group>";
+		};
+		9289EC7FCE25C766D1E02CCC30B32853 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4344839CC7690F7950213314CD2719AD /* PhoneNumberMetadata.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9CD8CFC3F58A6823406FCEF6DF0DCEDD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D453EFF2051543510D3C977AF5ECDCD8 /* Info.plist */,
+				F7525EC22ACA00CF0A917E894F3FFDED /* Toaster.modulemap */,
+				5A946B1EF87CAC30C63D1717DBDC6C8C /* Toaster.xcconfig */,
+				C68E28697D4F3646F01D0A2F730BF17A /* Toaster-dummy.m */,
+				67EEAD0FFAA815BEC619374F19C10D0C /* Toaster-prefix.pch */,
+				97DECBA11C773F265FA854AC4FFF701E /* Toaster-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toaster";
+			sourceTree = "<group>";
+		};
+		A261D0BC85213D0DF63188C9DE9EBA1C /* InputMask */ = {
+			isa = PBXGroup;
+			children = (
+				DE729453C9F22B6FCCBBF7EC6AF437F5 /* CaretString.swift */,
+				C9430118309AABC55637A5A01FD1A990 /* CaretStringIterator.swift */,
+				07D2165C35BD670F1CFA0820B850ABFA /* Compiler.swift */,
+				0D083ABF4B5325AF319B2E61EF47BF2D /* EOLState.swift */,
+				D52BFF607E75A9EE52338AAEE0AD203C /* FixedState.swift */,
+				E0D6D465DE78F4CD444723C7472981C3 /* FormatSanitizer.swift */,
+				09A967DB894A32FF17C2018ACF46012A /* FreeState.swift */,
+				E4C8E04C1612F7D3E448C9FA2356E513 /* InputMask.h */,
+				AC447F4452DDF1A4C05692BF7CB12B00 /* InterfaceBuilderSupport.swift */,
+				5B74A5E47646A8C0A6D96F8356E12CE8 /* Mask.swift */,
+				08C5B8CA52FE237D3FF97312297AF0B5 /* MaskedTextFieldDelegate.swift */,
+				029AA5F5A51460199CCB7FD0B88EB08A /* Next.swift */,
+				C684B419904BAA5C124BFD2B8C233D45 /* NSCharacterSet.swift */,
+				E49A3F31E24B4DEFC55F4FE73932ECF9 /* OptionalValueState.swift */,
+				4F0494C79E35291E346A8451CB149C7E /* PolyMaskTextFieldDelegate.swift */,
+				F283A6C503F4F8228C25834D054BE7FE /* State.swift */,
+				1039D3BDFAAF2E2BC1C278EA9BD5F343 /* String.swift */,
+				CB317E9F6BF5AD1F7A877B4D0BB80326 /* ValueState.swift */,
+				F040F9DC6AB2BACF8B1BBA01CD8D3CB0 /* Support Files */,
+			);
+			name = InputMask;
+			path = InputMask;
+			sourceTree = "<group>";
+		};
+		A37A5BB9C41A6E8A193F004A22BD988E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7B85CBBAE6502ADFCB513CC6117C578 /* Alamofire.modulemap */,
+				9705BDB919E4AADDF4BE0D3B1CD579D1 /* Alamofire.xcconfig */,
+				8BB3CADC2D53EC2B9CE0461FF1AE1B5F /* Alamofire-dummy.m */,
+				99A4C9A1ACDCA76D5CF3E9E92BEB9042 /* Alamofire-prefix.pch */,
+				00C953E8A694CE80FC5A5A86CE4A0686 /* Alamofire-umbrella.h */,
+				F71C343EDB74973A1677B44CEE507DFA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		AD49685DE6D1B8E10CA3B2AFF5039C7A /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				58864C7F5A043E49F86CC079186FCFCE /* AFError.swift */,
+				76A2C98E5CAC31A179B0BF261E12569B /* Alamofire.swift */,
+				49A96D43F6B2B1CC0DFBEA15F5FE5C51 /* DispatchQueue+Alamofire.swift */,
+				057D010F668DE6F0F2BE54ABCD7A8515 /* MultipartFormData.swift */,
+				11D9FE4B5C1C1F23973B19A3A0247C29 /* NetworkReachabilityManager.swift */,
+				2FB62F6A24768672D0D69F9A152A0828 /* Notifications.swift */,
+				44CCCA52DC3BF7A420E71424F7DD0E01 /* ParameterEncoding.swift */,
+				8900BC161085B0198E0DEFDA40CB8EF2 /* Request.swift */,
+				DC17AC1974EA62505953C7AE217848ED /* Response.swift */,
+				E49E63AA03D993CB9603173CAFD16992 /* ResponseSerialization.swift */,
+				3F23C0B2B8429DAD06BC3BC0382522F2 /* Result.swift */,
+				C3C5AEE27599E444152CA63FBE67ED57 /* ServerTrustPolicy.swift */,
+				D4535A2B655741A0AE37F9C4F039149D /* SessionDelegate.swift */,
+				5A32853C646C9DE766415603A0B567BA /* SessionManager.swift */,
+				CFBD87E5F75A63BF868B0E59A227A66D /* TaskDelegate.swift */,
+				7E6DC469179753DFBC9635B3BB422027 /* Timeline.swift */,
+				ACAB8D9CCC8CF1CB924F4E093B31EDA5 /* Validation.swift */,
+				A37A5BB9C41A6E8A193F004A22BD988E /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		C0FFCA57B8AF6838AE871A4E61C31BAF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8332B8C0BAB827368EC6B870C01AFF81 /* CoreTelephony.framework */,
+				4B43555F423C224C873F21BA0C779966 /* Foundation.framework */,
+				B33AD86396F2CF926382633E14AC08C0 /* QuartzCore.framework */,
+				D1808DA3948C77B5F18257239525607E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C309C2CDF03E1CF112E5F2D2460CF0B4 /* PhoneNumberKitCore */ = {
+			isa = PBXGroup;
+			children = (
+				F2D1E80BEF6FB5624561884D06C0E382 /* Constants.swift */,
+				422C4C4360459E878449CE589D33BC50 /* Formatter.swift */,
+				B69A1CCA52D1F6E0FA9C813868E78982 /* MetadataManager.swift */,
+				3D6D088F5C9936123A0C29459F32048A /* MetadataTypes.swift */,
+				5C0F790417BEEEFB5CF403225099D8F7 /* NSRegularExpression+Swift.swift */,
+				560AA1FB821473562ADF64DB3FAA2F2C /* ParseManager.swift */,
+				79DED5737ABA6EAB95044C3FDFC7DDA2 /* PartialFormatter.swift */,
+				0C81FDA7D7D7A3BAB776A0ED2E254ED3 /* PhoneNumber.swift */,
+				950CB6973F49949E9EDD3CB10EF577AB /* PhoneNumberKit.swift */,
+				C84D34BA59A3D55A70D77387FE25418B /* PhoneNumberParser.swift */,
+				E05F1785D7646E7A511B9446491EE994 /* RegexManager.swift */,
+				9289EC7FCE25C766D1E02CCC30B32853 /* Resources */,
+			);
+			name = PhoneNumberKitCore;
+			sourceTree = "<group>";
+		};
+		F040F9DC6AB2BACF8B1BBA01CD8D3CB0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				476E52E0AD2E36DBC45324C2AAFCF06E /* Info.plist */,
+				59026F5D8F50EEDC6428D46656DFD3AD /* InputMask.modulemap */,
+				C82E1E5A0443B116F441ED8BD7CC54EA /* InputMask.xcconfig */,
+				3F8E65C5422985249CA7D6B0E60003C2 /* InputMask-dummy.m */,
+				F12456BA502A44CC45988DD65ED43BCB /* InputMask-prefix.pch */,
+				30AE3F53B125E9792D089D679571741C /* InputMask-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InputMask";
+			sourceTree = "<group>";
+		};
+		F9E38F11A7AEAA74098FCB0FA3F931FE /* Pods-TaxiCramea */ = {
+			isa = PBXGroup;
+			children = (
+				DA7103DA482A826E1BBDB1574D335AE9 /* Info.plist */,
+				4F2D6298808E9B354F66AD33E2FF7322 /* Pods-TaxiCramea.modulemap */,
+				7B95A514355D0EE11A5DA3EED7DFE8CB /* Pods-TaxiCramea-acknowledgements.markdown */,
+				8FFBA51F8B1B1CA1062EC83B848F0988 /* Pods-TaxiCramea-acknowledgements.plist */,
+				EA6C50BF7A67A73966CC199EEEC6D14F /* Pods-TaxiCramea-dummy.m */,
+				91F87F4B57B98F280A0F7664A020A07B /* Pods-TaxiCramea-frameworks.sh */,
+				87AA257A0F4216CE3C85CAF8B7FED188 /* Pods-TaxiCramea-resources.sh */,
+				2C82CE3C31945CE0B5E33A2E742B86E0 /* Pods-TaxiCramea-umbrella.h */,
+				612F94E7E8E4D0D9C52264C2AF13B8AA /* Pods-TaxiCramea.debug.xcconfig */,
+				7BA68D7AB63DD7B0326B0D7BB8F39988 /* Pods-TaxiCramea.release.xcconfig */,
+			);
+			name = "Pods-TaxiCramea";
+			path = "Target Support Files/Pods-TaxiCramea";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F2A8822B69AE56D045F7FF3A1919CDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C528DDF9FAA5F88D35775D963D330E8D /* SearchTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		612DA4F2CDEDBCB2583206744F8261FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D11238776F6517BE1E5BF70ABBF452 /* PhoneNumberKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AB7FF1DF8CAC8775F3C1BF2671AC2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9AA5B17206370D1B709900EBEE6274 /* Pods-TaxiCrameaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0BDA7D114BCF3E8D5347600E86A578 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F562C8CB7DF0B0F7CE125BFFE6155505 /* Pods-TaxiCramea-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C92D5A8E8F2A99917A810535ACD689 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47E0505B6D6CF0E20E512C3FA88F2041 /* InputMask-umbrella.h in Headers */,
+				777D17D228B62C3AAFA3D7D996276FC2 /* InputMask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F8D759867D0C52182FA06D5C213830 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F98C7778A8F6757AAF673C767C6DBA /* Pods-TaxiCrameaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B2DA60601DB866FABE916A71B3356A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5876BA1E639244FFA75B4055FD3BA74F /* Toaster-umbrella.h in Headers */,
+				1123F7D0521D3DD18A3D14A63FB0C477 /* Toaster.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47130D42BDB761C86FFD29CAF89D281A /* InputMask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553B9D82A75ECDBDFE7269B87B5EED16 /* Build configuration list for PBXNativeTarget "InputMask" */;
+			buildPhases = (
+				FF894CB038A43C167E076397A9750489 /* Sources */,
+				1DD2CBBF7FBF20992AEBE30C4589D525 /* Frameworks */,
+				E1C92D5A8E8F2A99917A810535ACD689 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InputMask;
+			productName = InputMask;
+			productReference = 156F7D80FB30AF7090790036D25616F7 /* InputMask.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C94696D272EECAD8CEE77E88F5CF5DC /* Pods-TaxiCrameaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DD37BB92A5B6BF208ABEE26AB04849 /* Build configuration list for PBXNativeTarget "Pods-TaxiCrameaUITests" */;
+			buildPhases = (
+				397F922230C4933CF26EAD0EAD35A1F3 /* Sources */,
+				4543F863405086A1714FEC5938AB1E2D /* Frameworks */,
+				66AB7FF1DF8CAC8775F3C1BF2671AC2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TaxiCrameaUITests";
+			productName = "Pods-TaxiCrameaUITests";
+			productReference = D2CE6277C6F7201520DED284A5C5D54C /* Pods_TaxiCrameaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		591AA5CD5231ED25EE23303AD59015AE /* Pods-TaxiCrameaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1FC32569602863305BAB0793FF246E2 /* Build configuration list for PBXNativeTarget "Pods-TaxiCrameaTests" */;
+			buildPhases = (
+				29A2B0363421E1EA9C0995A2280BB817 /* Sources */,
+				ACB1B2EC323C133DAC58E091FE4B55B1 /* Frameworks */,
+				F2F8D759867D0C52182FA06D5C213830 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TaxiCrameaTests";
+			productName = "Pods-TaxiCrameaTests";
+			productReference = 1EC5C6442648B12BE2E4048D57232EA6 /* Pods_TaxiCrameaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		63DE44E7AFD21C19CC2430C8BB2B989B /* SearchTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF98F6A5A4F83A4CC4E3D2C2C9DF120 /* Build configuration list for PBXNativeTarget "SearchTextField" */;
+			buildPhases = (
+				ED071AB8501398CAE782CB0AE0D8AE2B /* Sources */,
+				B6B5875A5F29C8E3D470EAFEF6CF3135 /* Frameworks */,
+				1F2A8822B69AE56D045F7FF3A1919CDE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchTextField;
+			productName = SearchTextField;
+			productReference = 61669ADE1583014EA7935704170DF7D4 /* SearchTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 7CC645E2F20F4FF4D5EE585718778290 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4E77E187323925C213C1CC2B08B8EE /* Build configuration list for PBXNativeTarget "PhoneNumberKit" */;
+			buildPhases = (
+				40A1A161C36FB0F117E787D104E63CA4 /* Sources */,
+				761554F5306F577313F35D0C045A5B68 /* Frameworks */,
+				EF757B2E17FAF1F21EEAE31D8154A852 /* Resources */,
+				612DA4F2CDEDBCB2583206744F8261FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneNumberKit;
+			productName = PhoneNumberKit;
+			productReference = 29E3B19406756116545976086D6AB0DF /* PhoneNumberKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4398A2786983B8EFC8634A1FA22E0AB /* Pods-TaxiCramea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 378E620BDDEC29A4EF61608CC162EAC2 /* Build configuration list for PBXNativeTarget "Pods-TaxiCramea" */;
+			buildPhases = (
+				A27BB3D2E84BFD337CE436AC9A983EF5 /* Sources */,
+				17880DBD14740D8ECD431DD43711B138 /* Frameworks */,
+				6B0BDA7D114BCF3E8D5347600E86A578 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD635FA5E583E8B85F008064F1B2C1A /* PBXTargetDependency */,
+				6A547C22C278FDE65F49709524606C79 /* PBXTargetDependency */,
+				39AD46140FF50B59FC0057CDD521735C /* PBXTargetDependency */,
+				18632C23BF1F7904432B0D505BA504E7 /* PBXTargetDependency */,
+				A2EEAFBC3007D9C7D062CE4063590374 /* PBXTargetDependency */,
+			);
+			name = "Pods-TaxiCramea";
+			productName = "Pods-TaxiCramea";
+			productReference = 386CF4D75BE95832E5014C457A835EE6 /* Pods_TaxiCramea.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF864F3F99FB1D915705901FB57BD435 /* Toaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B60E7EC43C8C9101EF96B379E37FD6 /* Build configuration list for PBXNativeTarget "Toaster" */;
+			buildPhases = (
+				4116CD89630368DBA961B0C09901AEE3 /* Sources */,
+				8F32EC3FCC0ACCC43F31CAE46D8F5FB3 /* Frameworks */,
+				F9B2DA60601DB866FABE916A71B3356A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toaster;
+			productName = Toaster;
+			productReference = D4E2899B1C4C6F9D1373936E3BA2C768 /* Toaster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4E41040EB239D8382366FAC63EDC9D57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				47130D42BDB761C86FFD29CAF89D281A /* InputMask */,
+				8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */,
+				C4398A2786983B8EFC8634A1FA22E0AB /* Pods-TaxiCramea */,
+				591AA5CD5231ED25EE23303AD59015AE /* Pods-TaxiCrameaTests */,
+				4C94696D272EECAD8CEE77E88F5CF5DC /* Pods-TaxiCrameaUITests */,
+				63DE44E7AFD21C19CC2430C8BB2B989B /* SearchTextField */,
+				EF864F3F99FB1D915705901FB57BD435 /* Toaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF757B2E17FAF1F21EEAE31D8154A852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9F1A87FA2940B18DBD32B0180D50FA /* PhoneNumberMetadata.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29A2B0363421E1EA9C0995A2280BB817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E17ACA7C6C015C7166E680EE9B09BC9C /* Pods-TaxiCrameaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		397F922230C4933CF26EAD0EAD35A1F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44074B9FB2953B85AE388E3BDBC97BB /* Pods-TaxiCrameaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40A1A161C36FB0F117E787D104E63CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF0B3132715704E433B205423D73740 /* Constants.swift in Sources */,
+				0A0E4409D9DAE435A35BAD353F02E60A /* Formatter.swift in Sources */,
+				0104830478F68244D9627F6DC205D940 /* MetadataManager.swift in Sources */,
+				D83522A96EB0E8AC32E66D149A4C7D13 /* MetadataTypes.swift in Sources */,
+				AECF93568D922159B76A632196FCA6E9 /* NSRegularExpression+Swift.swift in Sources */,
+				5F74DB5E632AB8F370CADB9A57A62905 /* ParseManager.swift in Sources */,
+				FD2E20B69C2E19818E62F6570D93917C /* PartialFormatter.swift in Sources */,
+				B6EADA01029546ADA5D4718F1471799C /* PhoneNumber.swift in Sources */,
+				9C8BF7D4C243818BF3FBF03E54F44295 /* PhoneNumberKit-dummy.m in Sources */,
+				F3471ADCD4C3F3995D27362A2DA5054A /* PhoneNumberKit.swift in Sources */,
+				345550ECBA5ABA4FF86DCB480D4A3A58 /* PhoneNumberParser.swift in Sources */,
+				F0AAC8C0A171F5D16D5CC4EDFCFD3AA1 /* RegexManager.swift in Sources */,
+				E2CDF70ADCB177E5A75995E34BF537A1 /* TextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4116CD89630368DBA961B0C09901AEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40D3F49196275ADF0DF198F7C8D9246 /* Toast.swift in Sources */,
+				C63059C4F18FCDC31301E823083F60E6 /* ToastCenter.swift in Sources */,
+				02680A9257D954754662D438F595EB01 /* Toaster-dummy.m in Sources */,
+				BB4C17536751282E81BD9FF480DDF6F4 /* ToastView.swift in Sources */,
+				6FFD5BB6AA1EDF49AB0F9315DA754719 /* ToastWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27BB3D2E84BFD337CE436AC9A983EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279EE646CB901F75E2388298357F2004 /* Pods-TaxiCramea-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED071AB8501398CAE782CB0AE0D8AE2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF6FCEA71545D5BCC3C30E62E860F75 /* SearchTextField-dummy.m in Sources */,
+				31607743AAE4D14C127B3818F5B201A7 /* SearchTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF894CB038A43C167E076397A9750489 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2663EA5BEFA46169728C5EFBA91FF063 /* CaretString.swift in Sources */,
+				F273324F5BE6D5037697F89D1024CEFA /* CaretStringIterator.swift in Sources */,
+				BB6CDDAD9203D9D24D85A05844D0ED34 /* Compiler.swift in Sources */,
+				A1874C70043B050927A0FD2700432467 /* EOLState.swift in Sources */,
+				D8303D3667F6CC05A6C2BADFDFD7A3C4 /* FixedState.swift in Sources */,
+				1CFE743B583E56658C161DA86F5D8548 /* FormatSanitizer.swift in Sources */,
+				DC886CD29BB968D80DB5D773995EA8B1 /* FreeState.swift in Sources */,
+				FD7D19C56EC1D5C4F14B246D15D811AA /* InputMask-dummy.m in Sources */,
+				584E0F91D6B97E567D61D8A697553CEF /* InterfaceBuilderSupport.swift in Sources */,
+				880286FFB310739DB6CB92F6F17A5662 /* Mask.swift in Sources */,
+				07B31C8D7DDEE3DC9F3364E0993E3FDA /* MaskedTextFieldDelegate.swift in Sources */,
+				2347324617E9AF7C8ED379A26BE913A6 /* Next.swift in Sources */,
+				79FEC8912DC08BB7084BB94F1B54E923 /* NSCharacterSet.swift in Sources */,
+				13FCF14212970EC9BD76BD80C8E8D43A /* OptionalValueState.swift in Sources */,
+				E05ED3C5F062E0680C68F739C2FD544F /* PolyMaskTextFieldDelegate.swift in Sources */,
+				ADF53BD0BD741215D07B3213FA5190FF /* State.swift in Sources */,
+				C9B4B6215A65F6B43439359BA30C2F7E /* String.swift in Sources */,
+				AC923E225A6BE4C2DB4B9AD835BADAD4 /* ValueState.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18632C23BF1F7904432B0D505BA504E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SearchTextField;
+			target = 63DE44E7AFD21C19CC2430C8BB2B989B /* SearchTextField */;
+			targetProxy = E860CC740F1662575556DE6A7978AA7F /* PBXContainerItemProxy */;
+		};
+		39AD46140FF50B59FC0057CDD521735C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PhoneNumberKit;
+			target = 8C5BD10883BD185426DD737247F56DEC /* PhoneNumberKit */;
+			targetProxy = 3A1EC2F73028A5001AA2BDEBC5E1C46E /* PBXContainerItemProxy */;
+		};
+		6A547C22C278FDE65F49709524606C79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InputMask;
+			target = 47130D42BDB761C86FFD29CAF89D281A /* InputMask */;
+			targetProxy = 5F83C8FBA963CD300DC78240A97A7988 /* PBXContainerItemProxy */;
+		};
+		8AD635FA5E583E8B85F008064F1B2C1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 34520E756E252BB1FB273D85CE05A60C /* PBXContainerItemProxy */;
+		};
+		A2EEAFBC3007D9C7D062CE4063590374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toaster;
+			target = EF864F3F99FB1D915705901FB57BD435 /* Toaster */;
+			targetProxy = 6790B5C127388D554C3288E243AEF00B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06E12C96121D29FFA148B520EA60846C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C8F31929E718783DEC843DF533AFAE4 /* Pods-TaxiCrameaUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCrameaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCrameaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		34D14F17987C3961F392F7EA8BEFD190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2071DDCAAAE65C7E9F62CCEC7B05BF /* SearchTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SearchTextField/SearchTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SearchTextField/SearchTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SearchTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3BD1A7485A34EFD953AF0A69AFCC09FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A946B1EF87CAC30C63D1717DBDC6C8C /* Toaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Toaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FC8F606C7FB240F4569C0F9D3D0EEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC4E869450D69EF86B3FACCFD71ABE4 /* Pods-TaxiCrameaUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCrameaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCrameaUITests/Pods-TaxiCrameaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCrameaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63C653CBD08A3C499CBFAFF9BE6FEE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BC0F0159F79CC42012C90D5396E881 /* PhoneNumberKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PhoneNumberKit/PhoneNumberKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PhoneNumberKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PhoneNumberKit/PhoneNumberKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PhoneNumberKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D072D0D174F12EAACC1862DA756E67A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9705BDB919E4AADDF4BE0D3B1CD579D1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F23CABB338057ACCB8A215B4EEE0B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82E1E5A0443B116F441ED8BD7CC54EA /* InputMask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/InputMask/InputMask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InputMask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InputMask/InputMask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = InputMask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F7FF53BAFA76492A2E2B38F8A294AF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 612F94E7E8E4D0D9C52264C2AF13B8AA /* Pods-TaxiCramea.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCramea/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCramea;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81D324B0ACBB6D8B79D1C95A4A82EBAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BC0F0159F79CC42012C90D5396E881 /* PhoneNumberKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PhoneNumberKit/PhoneNumberKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PhoneNumberKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PhoneNumberKit/PhoneNumberKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PhoneNumberKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F251AC401BE7FEC2DAC439D9C311A12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5805241C4F7778ABBD68B6953460D094 /* Pods-TaxiCrameaTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCrameaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCrameaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A46E8F0929E8D9F128A905026B8F6E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC2071DDCAAAE65C7E9F62CCEC7B05BF /* SearchTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SearchTextField/SearchTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SearchTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SearchTextField/SearchTextField.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SearchTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10CB0B475115504D44F6211D2211E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA68D7AB63DD7B0326B0D7BB8F39988 /* Pods-TaxiCramea.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCramea/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCramea/Pods-TaxiCramea.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCramea;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9660A42FEDD040185578ADA021EC8E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9705BDB919E4AADDF4BE0D3B1CD579D1 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD266B279A224048D97C461647316D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82E1E5A0443B116F441ED8BD7CC54EA /* InputMask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/InputMask/InputMask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InputMask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InputMask/InputMask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = InputMask;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4281B7DBEBD5FFB6EFFF4AEF602320F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54546AD34BC1C482A1C3DC4D2D7421E /* Pods-TaxiCrameaTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaxiCrameaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaxiCrameaTests/Pods-TaxiCrameaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaxiCrameaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D58074D858406F00DF7DF17083C98A94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A946B1EF87CAC30C63D1717DBDC6C8C /* Toaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toaster/Toaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toaster/Toaster.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Toaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166E2CAC58E8608AD59A6F0B71C9C3E0 /* Debug */,
+				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		378E620BDDEC29A4EF61608CC162EAC2 /* Build configuration list for PBXNativeTarget "Pods-TaxiCramea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F7FF53BAFA76492A2E2B38F8A294AF2 /* Debug */,
+				C10CB0B475115504D44F6211D2211E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4E77E187323925C213C1CC2B08B8EE /* Build configuration list for PBXNativeTarget "PhoneNumberKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C653CBD08A3C499CBFAFF9BE6FEE8F /* Debug */,
+				81D324B0ACBB6D8B79D1C95A4A82EBAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9660A42FEDD040185578ADA021EC8E0 /* Debug */,
+				7D072D0D174F12EAACC1862DA756E67A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF98F6A5A4F83A4CC4E3D2C2C9DF120 /* Build configuration list for PBXNativeTarget "SearchTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46E8F0929E8D9F128A905026B8F6E0B /* Debug */,
+				34D14F17987C3961F392F7EA8BEFD190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553B9D82A75ECDBDFE7269B87B5EED16 /* Build configuration list for PBXNativeTarget "InputMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F23CABB338057ACCB8A215B4EEE0B16 /* Debug */,
+				CD266B279A224048D97C461647316D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B60E7EC43C8C9101EF96B379E37FD6 /* Build configuration list for PBXNativeTarget "Toaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D58074D858406F00DF7DF17083C98A94 /* Debug */,
+				3BD1A7485A34EFD953AF0A69AFCC09FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1FC32569602863305BAB0793FF246E2 /* Build configuration list for PBXNativeTarget "Pods-TaxiCrameaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4281B7DBEBD5FFB6EFFF4AEF602320F /* Debug */,
+				8F251AC401BE7FEC2DAC439D9C311A12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DD37BB92A5B6BF208ABEE26AB04849 /* Build configuration list for PBXNativeTarget "Pods-TaxiCrameaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06E12C96121D29FFA148B520EA60846C /* Debug */,
+				5FC8F606C7FB240F4569C0F9D3D0EEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
