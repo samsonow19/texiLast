@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SearchTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4C82C83FEB60CF20FCE55995863EA47F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4C94696D272EECAD8CEE77E88F5CF5DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52A4BE1015CEE6522C55113C10FBDAFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63DE44E7AFD21C19CC2430C8BB2B989B</key>
+		<key>7E23D3E2B746A3D0C0F8BCE0C33A0DFD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -77,12 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C4398A2786983B8EFC8634A1FA22E0AB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EF864F3F99FB1D915705901FB57BD435</key>
+		<key>F2D925B1BDDA6720B854629D92F111EE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

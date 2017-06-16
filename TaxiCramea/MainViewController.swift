@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 import Toaster
-
+import UserNotifications
 
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -33,6 +33,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     var currentDay = CurrentDay.toDay
     var allOrderChoose : Bool = true
     var currentOptions : CurrentOptions = CurrentOptions.allOrder
+    
+    let myNotification = Notification.Name(rawValue:"Найдены трансферы по вашему поиску")
     
     @IBOutlet weak var tabelConstr: NSLayoutConstraint! // 116
     @IBAction func regionButton(_ sender: UIButton) {
@@ -100,8 +102,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             ]
         Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
             var data = self.convertToDictionary(text: respons.result.value)
-            print(respons.result.value)
-            print(data)
+
             let transfers =  data?["transfer"] as? NSDictionary
       
             if transfers != nil {
@@ -122,9 +123,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             
         }
-
-        
-        
         
         allOrderChoose = false
         testView.isHidden = true
@@ -173,11 +171,52 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     @IBAction func findClick(_ sender: Any) {
-        
+       loadFind()
+    }
+
+    func loadFind() {
+        allOrderChoose = false
+        testView.isHidden = true
+        tabelConstr.constant = 0
+        dateView.isHidden = true
+        currentOptions = .iFind
+        let user: UserModel = UserModel.shared
+        let url = BASEURL + "buy_search.php"
+        orderArray.removeAll()
+        let parameters: Parameters = [
+            "code": CODE ,
+            "token":  user.tokenUserTaxi ,
+            "id_user":  user.idUser,
+            ]
+        Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
+            var data = self.convertToDictionary(text: respons.result.value)
+            let transfers =  data?["transfer"] as? NSDictionary
+            
+            if transfers != nil {
+                var orderItem: OrderModel
+                self.orderCurrentArray.removeAll()
+                for (_, value) in transfers! {
+                    print(value)
+                    orderItem = OrderModel()
+                    orderItem.loadShotOrder(data: value as! NSDictionary)
+                    print(value)
+                    self.orderCurrentArray.append(orderItem)
+                }
+                print( self.orderCurrentArray)
+                self.tableView.reloadData()
+                
+            } else {
+                Toast.init(text: "По вашим запросам ни чего не найдено. Можете расширить поиск в меню \"Куплю\"").show()
+            }
+            
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let nc = NotificationCenter.default
+        nc.addObserver(forName:myNotification, object:nil, queue:nil, using:catchNotification)
+        
         self.navigationController?.isNavigationBarHidden = true;
         
         let user: UserModel = UserModel.shared
@@ -201,6 +240,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         _ = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
     
     func textForRegionButton() {
         var test : String!
@@ -226,7 +272,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
                 dateString = order.time
            
-                var date = dateFormatter.date(from: dateString!)
+                let date = dateFormatter.date(from: dateString!)
                 if checkDay(dateOrder: date!) {
                     orderCurrentArray.append(order)
                 }
@@ -278,6 +324,23 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return true
     }
     
+    func catchNotification(notification:Notification) -> Void {
+        print("Catch notification")
+        
+        guard let userInfo = notification.userInfo,
+            let message  = userInfo["message"] as? String,
+            let date     = userInfo["date"]    as? Date else {
+                print("No userInfo found in notification")
+                return
+        }
+        
+        let alert = UIAlertController(title: "Notification!",
+                                      message:"\(message) received at \(date)",
+            preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func update() {
         
         let user: UserModel = UserModel.shared
@@ -290,13 +353,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             "id_user":  user.idUser ,
             "classAuto": "1",
             ]
+        
+        
         Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
             var data = self.convertToDictionary(text: respons.result.value)
             let transfers =  data?["transfer"] as? NSDictionary
                 if transfers != nil {
                     var orderItem: OrderModel
                     for (_, value) in transfers! {
-                        print(value)
+                      
                         orderItem = OrderModel()
                         orderItem.loadShotOrder(data: value as! NSDictionary)
                         self.orderArray.append(orderItem)
@@ -308,10 +373,24 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 } else {
                     Toast.init(text: "На данный момент трансферов нет").show()
                 }
+            
+            print(data)
+            let transfersFind =  data?["buy"] as? NSDictionary
+       
+            if transfersFind != nil {
+                let content = UNMutableNotificationContent()
+                content.title = NSString.localizedUserNotificationString(forKey: "По вашим запросам найдены трансферы", arguments: nil)
+                content.body = NSString.localizedUserNotificationString(forKey: "Пожалуйста зайдите в раздел \"Найденные\" ", arguments: nil)
+                content.sound = UNNotificationSound.default()
+                content.badge = 1
+                let trifer = UNTimeIntervalNotificationTrigger.init(timeInterval: 1, repeats: false)
+                let request = UNNotificationRequest.init(identifier: "Test3", content: content, trigger: trifer)
+                let center = UNUserNotificationCenter.current()
+                center.add(request)
+                self.loadFind()
+            }
+
         }
-        
-        
-        
         
  
         let urlAcunt = BASEURL + "account_info.php"
@@ -401,11 +480,24 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             print(orderItem.name)
            
 
-            cell.beforeTime.text = orderItem.beforeDate
-            cell.toTime.text = orderItem.toDate
+            cell.beforeTime.text = orderItem.toDate
+            cell.toTime.text =  orderItem.beforeDate
             cell.whereTextLabel.text = orderItem.whereOrder
             cell.whenceTextLabel.text = orderItem.whence
             cell.dateTextLabel.text = orderItem.time
+            
+            return cell
+        }
+        
+        
+        if currentOptions == .iFind {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath)  as! MainTableViewCell
+            var orderItem: OrderModel = OrderModel()
+            orderItem = orderCurrentArray[indexPath.row]
+            cell.whereLabel.text = orderItem.whence
+            cell.whenceLabel.text = orderItem.whereOrder
+            cell.dateLabel.text = orderItem.time
+            cell.costLabel.text = orderItem.cost
             
             return cell
         }
@@ -430,44 +522,164 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let message = "Взять заказ"
-        let alertOrder = UIAlertController(title: "Взять", message: message, preferredStyle: UIAlertControllerStyle.alert)
-        alertOrder.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
-            let user: UserModel = UserModel.shared
-            //let avto: AvtoModel = AvtoModel.shared
-            let url = BASEURL + "transfer_buy.php"
-            let parameters: Parameters = [
-                "code": CODE ,
-                "token":  user.tokenUserTaxi ,
-                "id_user":  user.idUser ,
-                "id_zakaz":  self.orderCurrentArray[indexPath.row].id ,
-                "classAuto": "1",
-                ]
-            Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
-                let dataOrder = self.convertToDictionary(text: respons.result.value)
-                let buyOrder = dataOrder?["success"]
-                if buyOrder != nil {
-                   Toast.init(text: "Трансфер перемещен в текущие заказы").show()
-                    var indexOrder = 0
-                    for oreder in self.orderArray {
-                        if oreder.id == self.orderCurrentArray[indexPath.row].id {
-                            self.orderArray.remove(at: indexOrder)
+        if currentOptions == .allOrder {
+            let message = "Взять заказ"
+            let alertOrder = UIAlertController(title: "Взять", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alertOrder.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                let user: UserModel = UserModel.shared
+                //let avto: AvtoModel = AvtoModel.shared
+                let url = BASEURL + "transfer_buy.php"
+                    let parameters: Parameters = [
+                        "code": CODE ,
+                        "token":  user.tokenUserTaxi ,
+                        "id_user":  user.idUser ,
+                        "id_zakaz":  self.orderCurrentArray[indexPath.row].id ,
+                        "classAuto": "1",
+                        ]
+                Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
+                    let dataOrder = self.convertToDictionary(text: respons.result.value)
+                    let buyOrder = dataOrder?["success"]
+                    if buyOrder != nil {
+                        Toast.init(text: "Трансфер перемещен в текущие заказы").show()
+                        var indexOrder = 0
+                        for oreder in self.orderArray {
+                            if oreder.id == self.orderCurrentArray[indexPath.row].id {
+                                self.orderArray.remove(at: indexOrder)
+                            }
+                            indexOrder += 1
                         }
-                        indexOrder += 1
-                    }
-                    self.orderCurrentArray.remove(at: indexPath.row)
+                        self.orderCurrentArray.remove(at: indexPath.row)
                     
-                } else {
-                    Toast.init(text: "Не достаточно средств на счету или трансфер забрали").show()
+                    } else {
+                        Toast.init(text: "Не достаточно средств на счету или трансфер забрали").show()
+                    }
+                    self.tableView.reloadData()
                 }
-                self.tableView.reloadData()
-            }
             
-        }))
+            }))
         
-        alertOrder.addAction(UIAlertAction(title: "Не беру", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alertOrder, animated: true, completion: nil)
+            alertOrder.addAction(UIAlertAction(title: "Не беру", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertOrder, animated: true, completion: nil)
+        }
+        
+        
+        if currentOptions == .iFind {
+            let message = "Взять заказ"
+            let alertOrder = UIAlertController(title: "Взять", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alertOrder.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                let user: UserModel = UserModel.shared
+                //let avto: AvtoModel = AvtoModel.shared
+                let url = BASEURL + "transfer_buy.php"
+                let parameters: Parameters = [
+                    "code": CODE ,
+                    "token":  user.tokenUserTaxi ,
+                    "id_user":  user.idUser ,
+                    "id_zakaz":  self.orderCurrentArray[indexPath.row].id ,
+                    "classAuto": "1",
+                    ]
+                Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
+                    let dataOrder = self.convertToDictionary(text: respons.result.value)
+                    let buyOrder = dataOrder?["success"]
+                    if buyOrder != nil {
+                        Toast.init(text: "Трансфер перемещен в текущие заказы").show()
+                        var indexOrder = 0
+                        for oreder in self.orderArray {
+                            if oreder.id == self.orderCurrentArray[indexPath.row].id {
+                                self.orderArray.remove(at: indexOrder)
+                            }
+                            indexOrder += 1
+                        }
+                        self.orderCurrentArray.remove(at: indexPath.row)
+                        
+                    } else {
+                        Toast.init(text: "Не достаточно средств на счету или трансфер забрали").show()
+                    }
+                    self.tableView.reloadData()
+                }
+                
+            }))
+            
+            alertOrder.addAction(UIAlertAction(title: "Не беру", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertOrder, animated: true, completion: nil)
+        }
+
+        
+        
+        if currentOptions == .myOrder  {
+            
+            let message = "Завершить трансфер"
+            let alertOrder = UIAlertController(title: "Тренсфер будет удален и з спаска ваших трансферов", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alertOrder.addAction(UIAlertAction(title: "Завершить", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                let user: UserModel = UserModel.shared
+                
+                let url = BASEURL + "transfer_complete.php"
+                let parameters: Parameters = [
+                    "code": CODE ,
+                    "token":  user.tokenUserTaxi ,
+                    "id_user":  user.idUser ,
+                    "id_zakaz":  self.orderCurrentArray[indexPath.row].id ,
+                    
+                    ]
+                Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
+                    let dataOrder = self.convertToDictionary(text: respons.result.value)
+                    let buyOrder = dataOrder?["success"]
+                    if buyOrder != nil {
+                        Toast.init(text: "Трансфер завершон").show()
+                        self.orderCurrentArray.remove(at: indexPath.row)
+                        
+                    } else {
+                        Toast.init(text: "Повторите попытку. Трансфер может быть завершен только в день транзакции").show()
+                    }
+                    self.tableView.reloadData()
+                }
+                
+            }))
+            
+            alertOrder.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertOrder, animated: true, completion: nil)
+
+            
+            
+        }
+        
+        
+
+        if currentOptions == .iLookFor  {
+            
+            let message = " Удалить из поиска"
+            let alertOrder = UIAlertController(title: "Удалить", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alertOrder.addAction(UIAlertAction(title: "Удалить", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                let user: UserModel = UserModel.shared
+          
+                let url = BASEURL + "buy_main_id_remove.php"
+                let parameters: Parameters = [
+                    "code": CODE ,
+                    "token":  user.tokenUserTaxi ,
+                    "id_user":  user.idUser ,
+                    "id_buy":  self.orderCurrentArray[indexPath.row].id ,
+                    
+                    ]
+                
+                Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
+                    let dataOrder = self.convertToDictionary(text: respons.result.value)
+                    let buyOrder = dataOrder?["success"]
+                    if buyOrder != nil {
+                        Toast.init(text: "Эллемент удален из поиска").show()
+                        self.orderCurrentArray.remove(at: indexPath.row)
+                        
+                    } else {
+                        Toast.init(text: "Не удалось удалить эллемент").show()
+                    }
+                    self.tableView.reloadData()
+                }
+                
+            }))
+            
+            alertOrder.addAction(UIAlertAction(title: "Отмена", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alertOrder, animated: true, completion: nil)
+            
+        }
+        
         
     }
 

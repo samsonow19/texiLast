@@ -10,6 +10,7 @@ pod 'PhoneNumberKit', '~> 1.2'
 pod 'InputMask'
 pod 'Toaster', '~> 2.0'
 pod "SearchTextField"
+pod 'SDWebImage'
 
 
 

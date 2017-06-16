@@ -23,8 +23,19 @@ class BuyViewController: UIViewController {
     let datePiker = UIDatePicker()
     let timePiker1 = UIDatePicker()
     let timePiker2 = UIDatePicker()
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+  
+        
+    
         
         whereTextAC.startVisible = true
         //let whereSearchTextField = SearchTextField(frame: CGRect(x: 10, y: 100, width: 200, height: 40))
@@ -113,7 +124,7 @@ class BuyViewController: UIViewController {
             "code": CODE ,
             "token":  user.tokenUserTaxi ,
             "id_user":  user.idUser ,
-            "destination": whereTextAC.text ?? "",
+            "destination": whenceTextAC.text ?? "",
             "whence": whereTextAC.text ?? "",
             "data": date1,
             "data_to": date2,

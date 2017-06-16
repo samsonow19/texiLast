@@ -24,6 +24,11 @@ class RegViewController: UIViewController,MaskedTextFieldDelegateListener {
     
     var maskedDelegate: MaskedTextFieldDelegate!
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         maskedDelegate = MaskedTextFieldDelegate(format: "{7} ([000]) [000]-[00]-[00]")

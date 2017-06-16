@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import Toaster
+import SDWebImage
 
 class OptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var yearPicker: UITextField!
@@ -33,6 +34,11 @@ class OptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let theInfo:NSDictionary = info as NSDictionary
         
@@ -46,36 +52,42 @@ class OptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         let user: UserModel = UserModel.shared
         let avto: AvtoModel = AvtoModel.shared
         let url = BASEURL + "marka.php"
+        
+        let image : UIImage = curImage.image!
+        //Now use image to create into NSData format
+        let imageData:NSData = UIImagePNGRepresentation(image)! as NSData
+        
+        let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+ 
+
         let jpegCompressionQuality: CGFloat = 0.9
         let base64String = UIImageJPEGRepresentation(curImage.image! , jpegCompressionQuality)?.base64EncodedString()
         let nameImage = "carImage.jpeg";
-   
+
         let parameters: Parameters = [
             "code": CODE ,
             "token":  user.tokenUserTaxi,
             "id_user":  user.idUser ,
-            "classAuto": "1",
+            "classAvto": "1",
             "mark": marcaCurTextFild.text ?? "" ,
             "color": colorTextFild.text ?? "" ,
             "licenceNumber": texhPasportTextfild.text ?? "" ,
             "carNumber": numberCurTextFild.text ?? "" ,
+           
+            "receipts": boolReceipt.isOn ? "1":"0",
+            "smoking": boolSmoking.isOn ? "1":"0",
+            "fest": boolFest.isOn ? "1":"0",
+            "booster": boolBooster.isOn ? "1":"0",
             "seats": countPlaceTextFild.text ?? "" ,
-            
+            "babychair": boolChair.isOn ? "1":"0",
             "year": yearPicker.text ?? "" ,
-            "receipts": boolReceipt.isOn ? "0":"1",
-            "smoking": boolSmoking.isOn ? "0":"1",
-            "fest": boolFest.isOn ? "0":"1",
-            "booster": boolBooster.isOn ? "0":"1",
-            "seats": countPlaceTextFild.text ?? "",
-            "babychair": boolChair.isOn ? "0":"1",
-            "year": yearPicker.text ?? "" ,
-            "conditioning": boolCondishon.isOn ? "0":"1",
+            "conditioning": boolCondishon.isOn ? "1":"0",
             "ImageName": nameImage,
-            "image": base64String ?? "" ,
-            ]
+            "image": strBase64 ?? "",]
         Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
             var data = convertToDictionary(text: respons.result.value)
-            let transfers =  data?["class"] as? NSDictionary
+            print(data)
+            let transfers =  data?["class"]
             if transfers != nil {
                 Toast.init(text: "Данные сохранены").show()
                 
@@ -100,12 +112,14 @@ class OptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
            ]
         Alamofire.request(url, method: .post, parameters: parameters).responseString{ respons in
             var data = convertToDictionary(text: respons.result.value)
-            let transfers =  data?["class"] as? NSDictionary
+            let transfers =  data
+            print(data)
             if transfers != nil {
-                self.marcaCurTextFild.text =  transfers?["mark"] as? String
+          
+                self.marcaCurTextFild.text =  transfers?["marka"] as? String
                 self.colorTextFild.text = transfers?["color"] as? String
-                self.texhPasportTextfild.text = transfers?["licenceNumber"] as? String
-                self.numberCurTextFild.text = transfers?["carNumber"] as? String
+                self.texhPasportTextfild.text = transfers?["passport"] as? String
+                self.numberCurTextFild.text = transfers?["number"] as? String
                 self.countPlaceTextFild.text = transfers?["seats"] as? String
                 self.yearPicker.text = transfers?["year"] as? String
                 
@@ -145,7 +159,11 @@ class OptionsViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
                     self.boolCondishon.isOn = false
                 }
                 
-                avto.classAvtoUserTaxi = transfers?["class"] as! String 
+                avto.classAvtoUserTaxi = transfers?["class"] as! String
+                
+                avto.imageURLUserTaxi = transfers?["image"] as! String
+                print(avto.imageURLUserTaxi )
+             self.curImage.sd_setImage(with:URL(string:  avto.imageURLUserTaxi)  , placeholderImage: UIImage(named: "Placeholder"))
                 
                 Toast.init(text: "Данные загружены").show()
                 
